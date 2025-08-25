@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RPG Creature Search</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>RPG Creature Search</h1>
+
+    <!-- Search bar + button -->
+    <form id="search-form" class="search" novalidate>
+      <!-- 1. input with id="search-input" and required -->
+      <input id="search-input" type="text" placeholder="Enter name or ID…" required />
+      <!-- 2. button with id="search-button" -->
+      <button id="search-button" type="submit">Search</button>
+    </form>
+
+    <section class="result">
+      <div class="header">
+        <!-- 3–7: required elements -->
+        <h2 id="creature-name">—</h2>
+        <span id="creature-id">—</span>
+      </div>
+
+      <div class="meta">
+        <!-- 5. weight / 6. height / 7. types -->
+        <p id="weight">—</p>
+        <p id="height">—</p>
+        <ul id="types" class="types"></ul>
+      </div>
+
+      <!-- Stats grid (8–13) -->
+      <div class="stats">
+        <div class="stat"><span>HP</span><strong id="hp">—</strong></div>
+        <div class="stat"><span>Attack</span><strong id="attack">—</strong></div>
+        <div class="stat"><span>Defense</span><strong id="defense">—</strong></div>
+        <div class="stat"><span>Special Attack</span><strong id="special-attack">—</strong></div>
+        <div class="stat"><span>Special Defense</span><strong id="special-defense">—</strong></div>
+        <div class="stat"><span>Speed</span><strong id="speed">—</strong></div>
+      </div>
+
+      <figure class="art">
+        <img id="creature-image" alt="" />
+      </figure>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
